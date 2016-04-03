@@ -8,7 +8,7 @@ import com.xy.model.Driver;
 import com.xy.service.DriverServiceInter;
 
 @Service("driverProxy")
-public class DriverServiceImpl extends BaseServiceImpl<Driver> implements DriverServiceInter {
+public class DriverServiceImpl extends BaseServiceImpl<Integer,Driver> implements DriverServiceInter {
 	@Autowired
 	private DriverDaoInter driverDao;		//从容器中注入session工厂【无需get,set方法】
 	

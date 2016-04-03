@@ -6,7 +6,7 @@ import com.xy.dao.DrievaluationDaoInter;
 import com.xy.model.Drievaluation;
 
 @Repository("drievaluationDao")
-public class DrievaluationDaoImpl extends BaseDaoImpl<Drievaluation> implements
+public class DrievaluationDaoImpl extends BaseDaoImpl<Integer,Drievaluation> implements
 		DrievaluationDaoInter {
 	//通过调用父类的构造函数指定clazz值，即实体类的类类型
 	public DrievaluationDaoImpl() {

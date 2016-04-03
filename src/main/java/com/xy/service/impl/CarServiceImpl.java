@@ -8,7 +8,7 @@ import com.xy.model.Car;
 import com.xy.service.CarServiceInter;
 
 @Service("carProxy")
-public class CarServiceImpl extends BaseServiceImpl<Car> implements CarServiceInter {
+public class CarServiceImpl extends BaseServiceImpl<Integer,Car> implements CarServiceInter {
 	@Autowired
 	private CarDaoInter carDao;		//从容器中注入session工厂【无需get,set方法】
 	

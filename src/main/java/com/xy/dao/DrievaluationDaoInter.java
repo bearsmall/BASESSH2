@@ -2,6 +2,6 @@ package com.xy.dao;
 
 import com.xy.model.Drievaluation;
 
-public interface DrievaluationDaoInter extends BaseDaoInter<Drievaluation> {
+public interface DrievaluationDaoInter extends BaseDaoInter<Integer,Drievaluation> {
 
 }

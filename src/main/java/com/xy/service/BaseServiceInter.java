@@ -6,13 +6,13 @@ import java.util.LinkedHashMap;
 
 import com.xy.util.QueryResult;
 
-public interface BaseServiceInter<T extends Serializable>  {
+public interface BaseServiceInter<K extends Serializable,T extends Serializable>  {
 	/**
 	 * 将实体对象保存到数据库中
 	 * @param t 待保存的实体对象
 	 * @return 实体对象的ID
 	 */
-	public Integer save(T t);
+	public K save(T t);
 	/**
 	 * 将实体对象【集合】保存到数据库中
 	 * @param ct 实体对象【集合】
@@ -23,7 +23,7 @@ public interface BaseServiceInter<T extends Serializable>  {
 	 * @param id 表记录中的对应的id字段
 	 * @return 对应的实体对象
 	 */
-	public T findById(Integer id);
+	public T findById(K id);
 	/**
 	 * 更新一条记录
 	 * @param t 待更新记录对应的实体对象
@@ -51,7 +51,7 @@ public interface BaseServiceInter<T extends Serializable>  {
 	 * @param id 待删除记录id
 	 * @return 是否删除成功（id是否有效）
 	 */
-	public boolean deleteById(Integer id);
+	public boolean deleteById(K id);
 	/**
 	 * 加载所有记录集合
 	 * @return 所有记录集合

@@ -13,13 +13,13 @@ import com.xy.service.BaseServiceInter;
 import com.xy.util.QueryResult;
 
 @Transactional(propagation=Propagation.REQUIRED)
-public abstract class BaseServiceImpl<T extends Serializable> implements BaseServiceInter<T> {
+public abstract class BaseServiceImpl<K extends Serializable,T extends Serializable> implements BaseServiceInter<K,T> {
 
 	@Autowired
-	private BaseDaoInter<T> baseDao;		//从容器中注入session工厂【无需get,set方法】
+	private BaseDaoInter<K,T> baseDao;		//从容器中注入session工厂【无需get,set方法】
 	
 	@Override
-	public Integer save(T t) {
+	public K save(T t) {
 		return baseDao.save(t);
 	}
 
@@ -29,7 +29,7 @@ public abstract class BaseServiceImpl<T extends Serializable> implements BaseSer
 	}
 
 	@Override
-	public T findById(Integer id) {
+	public T findById(K id) {
 		return baseDao.findById(id);
 	}
 
@@ -54,7 +54,7 @@ public abstract class BaseServiceImpl<T extends Serializable> implements BaseSer
 	}
 
 	@Override
-	public boolean deleteById(Integer id) {
+	public boolean deleteById(K id) {
 		return baseDao.deleteById(id);
 	}
 

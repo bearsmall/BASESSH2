@@ -8,7 +8,7 @@ import com.xy.model.Complain;
 import com.xy.service.ComplainServiceInter;
 
 @Service("complainProxy")
-public class ComplainServiceImpl extends BaseServiceImpl<Complain> implements
+public class ComplainServiceImpl extends BaseServiceImpl<Integer,Complain> implements
 		ComplainServiceInter {
 	@Autowired
 	private ComplainDaoInter complainDao;		//从容器中注入session工厂【无需get,set方法】

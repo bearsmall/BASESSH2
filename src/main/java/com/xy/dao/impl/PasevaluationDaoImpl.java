@@ -6,7 +6,7 @@ import com.xy.dao.PasevaluationDaoInter;
 import com.xy.model.Pasevaluation;
 
 @Repository("pasevaluationDao")
-public class PasevaluationDaoImpl extends BaseDaoImpl<Pasevaluation> implements
+public class PasevaluationDaoImpl extends BaseDaoImpl<Integer,Pasevaluation> implements
 		PasevaluationDaoInter {
 	//通过调用父类的构造函数指定clazz值，即实体类的类类型
 	public PasevaluationDaoImpl() {

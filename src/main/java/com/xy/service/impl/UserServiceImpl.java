@@ -8,7 +8,7 @@ import com.xy.model.User;
 import com.xy.service.UserServiceInter;
 
 @Service("userProxy")
-public class UserServiceImpl extends BaseServiceImpl<User> implements UserServiceInter{
+public class UserServiceImpl extends BaseServiceImpl<Integer,User> implements UserServiceInter{
 
 	@Autowired
 	private UserDaoInter userDao;			//从容器中注入session工厂【无需get,set方法】

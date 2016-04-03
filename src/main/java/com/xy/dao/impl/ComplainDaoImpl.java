@@ -6,7 +6,7 @@ import com.xy.dao.ComplainDaoInter;
 import com.xy.model.Complain;
 
 @Repository("complainDao")
-public class ComplainDaoImpl extends BaseDaoImpl<Complain> implements
+public class ComplainDaoImpl extends BaseDaoImpl<Integer,Complain> implements
 		ComplainDaoInter {
 	//通过调用父类的构造函数指定clazz值，即实体类的类类型
 	public ComplainDaoImpl() {
