@@ -6726,3 +6726,516 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 		{ID:690822257, ConnectTime:"2016-04-03 16:31:06", UseCount:2, LastActiveTime:"2016-04-03 16:31:06"}
 	]
 }] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-03 16:44:15,316][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@66d33a: startup date [Sun Apr 03 16:44:15 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:44:15,366][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:44:15,634][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:44:15,902][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:44:16,237][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:44:16,411][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:44:16,420][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:44:16,422][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:44:16,424][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:44:17,093][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:44:17,113][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:44:17,118][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:44:17,460][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:44:17,460][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:44:17,464][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:44:17,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:44:17,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:44:17,485][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:44:17,485][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:44:17,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:44:17,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:44:17,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:44:17,491][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:44:17,496][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:44:17,496][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:44:17,497][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:44:17,497][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:44:17,505][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:44:17,506][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:44:17,506][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:44:17,506][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:44:17,511][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:44:17,512][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:44:17,512][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:44:17,512][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:44:17,516][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:44:17,517][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:44:17,517][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:44:17,517][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:44:17,522][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:44:17,522][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:44:17,522][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:44:17,523][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:44:17,527][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:44:17,528][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:44:17,528][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:44:17,528][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:44:17,535][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:44:17,535][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:44:17,536][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:44:17,536][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:44:17,541][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:44:17,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:44:17,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:44:17,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:44:17,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:44:17,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:44:17,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:44:17,547][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:44:17,548][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:44:17,726][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:44:16",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:726212590, ConnectTime:"2016-04-03 16:44:17", UseCount:2, LastActiveTime:"2016-04-03 16:44:17"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-03 16:46:31,150][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@66d33a: startup date [Sun Apr 03 16:46:31 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:46:31,229][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:46:31,502][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:46:31,749][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:46:32,063][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:46:32,225][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:46:32,232][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:46:32,234][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:46:32,236][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:46:33,120][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:46:33,152][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:46:33,156][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:46:33,519][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:46:33,520][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:46:33,523][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:46:33,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:46:33,544][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:46:33,544][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:46:33,544][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:46:33,550][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:46:33,551][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:46:33,551][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:33,551][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:46:33,557][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:46:33,557][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:46:33,557][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:33,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:46:33,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:46:33,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:46:33,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:46:33,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:46:33,571][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:46:33,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:46:33,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:33,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:46:33,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:46:33,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:46:33,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:46:33,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:46:33,587][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:46:33,587][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:46:33,588][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:33,588][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:46:33,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:46:33,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:46:33,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:46:33,594][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:46:33,601][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:46:33,601][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:46:33,601][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:46:33,601][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:46:33,608][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:46:33,608][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:46:33,608][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:46:33,608][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:46:33,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:46:33,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:46:33,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:33,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:46:33,616][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:46:33,838][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:46:31",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:726212590, ConnectTime:"2016-04-03 16:46:33", UseCount:2, LastActiveTime:"2016-04-03 16:46:33"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-03 16:46:48,473][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@66d33a: startup date [Sun Apr 03 16:46:48 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:46:48,539][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:46:48,787][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:46:49,003][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:46:49,352][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:46:49,510][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:46:49,518][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:46:49,520][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:46:49,522][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:46:50,224][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:46:50,249][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:46:50,253][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:46:50,670][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:46:50,670][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:46:50,675][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:46:50,693][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:46:50,693][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:46:50,693][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:46:50,694][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:46:50,699][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:46:50,699][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:46:50,699][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:50,699][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:46:50,704][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:46:50,704][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:46:50,704][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:50,705][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:46:50,711][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:46:50,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:46:50,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:46:50,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:46:50,717][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:46:50,717][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:46:50,717][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:50,717][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:46:50,722][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:46:50,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:46:50,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:46:50,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:46:50,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:46:50,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:46:50,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:50,729][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:46:50,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:46:50,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:46:50,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:46:50,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:46:50,742][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:46:50,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:46:50,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:46:50,743][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:46:50,749][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:46:50,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:46:50,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:46:50,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:46:50,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:46:50,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:46:50,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:46:50,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:46:50,756][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:46:50,947][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:46:49",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:726212590, ConnectTime:"2016-04-03 16:46:50", UseCount:2, LastActiveTime:"2016-04-03 16:46:50"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-03 16:56:42,371][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33cb5951: startup date [Sun Apr 03 16:56:42 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:56:42,446][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:56:42,734][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:56:43,029][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:56:43,402][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:56:43,593][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:56:43,600][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:56:43,604][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:56:43,606][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:56:44,378][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:56:44,408][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:56:44,415][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:56:44,888][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:56:44,888][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:56:44,892][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:56:44,920][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:56:44,920][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:56:44,921][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:56:44,921][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:56:44,929][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:56:44,929][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:56:44,929][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:56:44,929][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:56:44,938][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:56:44,938][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:56:44,939][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:56:44,939][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:56:44,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:56:44,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:56:44,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:56:44,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:56:44,961][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:56:44,961][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:56:44,962][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:56:44,962][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:56:44,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:56:44,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:56:44,969][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:56:44,969][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:56:44,974][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:56:44,974][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:56:44,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:56:44,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:56:44,983][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:56:44,983][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:56:44,983][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:56:44,983][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:56:44,993][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:56:44,993][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:56:44,993][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:56:44,994][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:56:45,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:56:45,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:56:45,001][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:56:45,001][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:56:45,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:56:45,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:56:45,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:56:45,010][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:56:45,012][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:56:45,445][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:56:43",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:503353142, ConnectTime:"2016-04-03 16:56:44", UseCount:2, LastActiveTime:"2016-04-03 16:56:45"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-04-03 16:57:24,392][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33cb5951: startup date [Sun Apr 03 16:57:24 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:57:24,445][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:57:24,695][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:57:24,951][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:57:25,353][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:57:25,567][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:57:25,576][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:57:25,579][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:57:25,581][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:57:26,313][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:57:26,339][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:57:26,344][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:57:26,765][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:57:26,765][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:57:26,769][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:57:26,788][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:57:26,788][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:57:26,788][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:57:26,789][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:57:26,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:57:26,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:57:26,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:57:26,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:57:26,798][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:57:26,798][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:57:26,800][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:57:26,800][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:57:26,806][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:57:26,806][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:57:26,806][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:57:26,806][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:57:26,813][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:57:26,814][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:57:26,814][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:57:26,814][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:57:26,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:57:26,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:57:26,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:57:26,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:57:26,830][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:57:26,830][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:57:26,830][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:57:26,831][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:57:26,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:57:26,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:57:26,836][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:57:26,837][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:57:26,844][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:57:26,844][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:57:26,844][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:57:26,844][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:57:26,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:57:26,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:57:26,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:57:26,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:57:26,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:57:26,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:57:26,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:57:26,860][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:57:26,864][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:57:27,117][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:57:25",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1018067851, ConnectTime:"2016-04-03 16:57:26", UseCount:2, LastActiveTime:"2016-04-03 16:57:26"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-04-03 16:57:27,528][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 45.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-04-03 16:58:24,222][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@66d33a: startup date [Sun Apr 03 16:58:24 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:58:24,294][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:58:24,604][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:58:24,844][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:58:25,187][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:58:25,348][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:58:25,355][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:58:25,358][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:58:25,360][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:58:25,977][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:58:25,998][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:58:26,002][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:58:26,372][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:58:26,372][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:58:26,375][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:58:26,395][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:58:26,395][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:58:26,395][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:58:26,395][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:58:26,401][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:58:26,401][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:58:26,401][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:26,401][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:58:26,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:58:26,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:58:26,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:26,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:58:26,413][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:58:26,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:58:26,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:58:26,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:58:26,418][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:58:26,419][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:58:26,419][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:26,419][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:58:26,424][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:58:26,424][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:58:26,424][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:58:26,425][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:58:26,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:58:26,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:58:26,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:26,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:58:26,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:58:26,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:58:26,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:58:26,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:58:26,447][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:58:26,447][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:58:26,447][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:58:26,447][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:58:26,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:58:26,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:58:26,454][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:58:26,454][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:58:26,457][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:58:26,457][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:58:26,457][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:26,458][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:58:26,460][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:58:26,642][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:58:24",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:726212590, ConnectTime:"2016-04-03 16:58:25", UseCount:2, LastActiveTime:"2016-04-03 16:58:26"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-04-03 16:58:26,870][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 45.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:26,872][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 63.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:26,900][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 52.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:26,900][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-04-03 16:58:33,418][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33cb5951: startup date [Sun Apr 03 16:58:33 CST 2016]; root of context hierarchy
+[INFO][2016-04-03 16:58:33,475][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-04-03 16:58:33,727][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-04-03 16:58:34,000][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-04-03 16:58:34,441][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-04-03 16:58:34,710][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[INFO][2016-04-03 16:58:34,721][org.hibernate.Version]HHH000412: Hibernate Core {4.1.7.Final}
+[INFO][2016-04-03 16:58:34,725][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-04-03 16:58:34,728][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-04-03 16:58:35,552][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-04-03 16:58:35,577][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-04-03 16:58:35,582][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-04-03 16:58:36,004][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-04-03 16:58:36,005][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-04-03 16:58:36,009][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-04-03 16:58:36,030][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.car
+[INFO][2016-04-03 16:58:36,030][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [licenseplatenumber, driverid, seatnumber, haveaircondition, id, type]
+[INFO][2016-04-03 16:58:36,030][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_have2]
+[INFO][2016-04-03 16:58:36,030][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_have2, primary]
+[INFO][2016-04-03 16:58:36,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.city2cityinfo
+[INFO][2016-04-03 16:58:36,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [start, spendtime, end, id, roadtoll, oilcost, mileage]
+[INFO][2016-04-03 16:58:36,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:36,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:58:36,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.complain
+[INFO][2016-04-03 16:58:36,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [passid, passname, drivid, id, state, time, type, drivname, content]
+[INFO][2016-04-03 16:58:36,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:36,043][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-04-03 16:58:36,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.drievaluation
+[INFO][2016-04-03 16:58:36,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:58:36,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to3, fk_to7]
+[INFO][2016-04-03 16:58:36,053][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to3, fk_to7, primary]
+[INFO][2016-04-03 16:58:36,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.driver
+[INFO][2016-04-03 16:58:36,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, drivingyears, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:58:36,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:36,060][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:58:36,067][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.pasevaluation
+[INFO][2016-04-03 16:58:36,067][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, leavemsg, driverid, pasid, id, time]
+[INFO][2016-04-03 16:58:36,067][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_to, fk_to5]
+[INFO][2016-04-03 16:58:36,068][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_to, primary, fk_to5]
+[INFO][2016-04-03 16:58:36,074][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.passenger
+[INFO][2016-04-03 16:58:36,074][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [score, password, name, id, phonenum, evaluatenum, username]
+[INFO][2016-04-03 16:58:36,074][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:36,074][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [username_unique, primary]
+[INFO][2016-04-03 16:58:36,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarapply
+[INFO][2016-04-03 16:58:36,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cartype, pasid, price, start, end, id, time, sharingcartype]
+[INFO][2016-04-03 16:58:36,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_apply]
+[INFO][2016-04-03 16:58:36,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_apply, primary]
+[INFO][2016-04-03 16:58:36,090][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarconfirm
+[INFO][2016-04-03 16:58:36,090][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [driv_safe_time, carinfo, pasid, pass_safe_num, pass_confirm, confirm, driverconfirm, driverid, pasconfirm, id, driv_confirm, driv_safe_num, carapply, pass_safe_time]
+[INFO][2016-04-03 16:58:36,090][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_trigger2, fk_trigger3, fk_car_apply, fk_car_info]
+[INFO][2016-04-03 16:58:36,090][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_car_info_idx, fk_sharing_car_idx, fk_trigger2, fk_trigger3_idx, primary]
+[INFO][2016-04-03 16:58:36,099][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.sharingcarinfo
+[INFO][2016-04-03 16:58:36,099][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [nowpasnum, cartype, maxpasnum, start, addedinfo, totaldistance, driverid, gasolinecosts, end, id, time, state, onewaycosts]
+[INFO][2016-04-03 16:58:36,099][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_driver]
+[INFO][2016-04-03 16:58:36,100][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_driver_idx, primary]
+[INFO][2016-04-03 16:58:36,107][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: sharingcar.user
+[INFO][2016-04-03 16:58:36,107][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, name, id]
+[INFO][2016-04-03 16:58:36,107][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-04-03 16:58:36,107][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [name_unique, primary]
+[INFO][2016-04-03 16:58:36,110][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-04-03 16:58:36,378][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-04-03 16:58:34",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1333938290, ConnectTime:"2016-04-03 16:58:35", UseCount:2, LastActiveTime:"2016-04-03 16:58:36"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-04-03 16:58:36,637][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 45.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:36,639][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 63.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:36,678][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 52.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-04-03 16:58:36,678][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
